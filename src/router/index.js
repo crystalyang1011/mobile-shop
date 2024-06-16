@@ -5,6 +5,8 @@ import home from '@/views/home/home.vue'
 import Layout from '@/views/layout.vue'
 import my from '@/views/my/my.vue'
 import Search from '@/views/search/index.vue'
+import SearchLayout from '@/views/search/layout.vue'
+import searchResult from '@/views/search/result.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,7 +27,14 @@ const router = createRouter({
         { path: 'cart', component: cart }
       ]
     },
-    { path: '/search', component: Search }
+    {
+      path: '/search',
+      component: SearchLayout,
+      children: [
+        { path: 'index', component: Search },
+        { path: 'result', component: searchResult }
+      ]
+    }
   ]
 })
 

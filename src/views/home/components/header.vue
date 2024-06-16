@@ -5,7 +5,7 @@
       <h2>优易选: 多！快！好！省！</h2>
       <div class="search">
         <van-icon name="search" />
-        <input type="text" @click="$router.push('/search')" />
+        <input type="text" @click="$router.push('/search/index')" />
       </div>
     </header>
   </van-sticky>

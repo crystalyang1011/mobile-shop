@@ -4,7 +4,7 @@
     <div class="title">
       <div>
         <van-icon name="clock-o" />
-        <span style="color: gray; font-size: 19px; margin-left: 10px">最近搜索</span>
+        <span style="color: gray; font-size: 18px; margin-left: 10px">最近搜索</span>
       </div>
       <van-icon name="delete-o" />
     </div>
@@ -24,8 +24,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
 }
 .icon {
   margin-top: 10px;

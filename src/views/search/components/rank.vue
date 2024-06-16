@@ -9,6 +9,7 @@ const rankList = ref([
   '旅行必备清单推荐',
   '最佳手机摄影技巧',
   '如何提高工作效率',
+  '最新科技展会时间地点',
   '最新科技展会时间地点'
 ])
 </script>
@@ -24,7 +25,7 @@ const rankList = ref([
 </template>
 <style lang="less" scoped>
 .rank {
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 .title {
   color: red;
