@@ -8,3 +8,10 @@
   width: 95%;
   margin: 0 auto;
 }
+
+input {
+  border: none;
+}
+button {
+  border: none;
+}

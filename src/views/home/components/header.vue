@@ -5,7 +5,7 @@
       <h2>优易选: 多！快！好！省！</h2>
       <div class="search">
         <van-icon name="search" />
-        <input type="text" />
+        <input type="text" @click="$router.push('/search/index')" />
       </div>
     </header>
   </van-sticky>
@@ -19,7 +19,7 @@ header {
   flex-wrap: wrap;
   width: 100%;
   height: 14vh;
-  background: linear-gradient(rgb(255, 74, 43), #ff9292);
+  background: linear-gradient(red, #ff9292);
 }
 h2 {
   margin-bottom: -1vh;

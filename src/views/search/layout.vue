@@ -1,20 +1,26 @@
-<script setup>
-import history from './components/history.vue'
-import rank from './components/rank.vue'
-</script>
+<script setup></script>
 <template>
-  <div class="search">
-    <history />
-    <rank />
+  <div class="search-layout">
+    <div class="header">
+      <van-icon @click="$router.go(-1)" name="revoke" />
+      <div class="search-input">
+        <input type="text" placeholder="迪桑特夏季polo衫" />
+        <button @click="$router.push('/search/result')">搜索</button>
+      </div>
+    </div>
+    <div class="white-bg">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <style lang="less" scoped>
-.search {
-  padding: 15px;
+.search-layout {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100vh;
+  background-color: red;
 }
 .header {
   padding: 10px;
@@ -51,7 +57,6 @@ import rank from './components/rank.vue'
   }
 }
 .white-bg {
-  padding: 15px;
   flex: 1;
   background-color: white;
   border-radius: 20px 20px 0 0;
