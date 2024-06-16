@@ -1,6 +1,7 @@
 import cart from '@/views/cart/cart.vue'
 import category from '@/views/category/category.vue'
 import content from '@/views/category/components/content.vue'
+import Good from '@/views/good/index.vue'
 import home from '@/views/home/home.vue'
 import Layout from '@/views/layout.vue'
 import my from '@/views/my/my.vue'
@@ -34,7 +35,8 @@ const router = createRouter({
         { path: 'index', component: Search },
         { path: 'result', component: searchResult }
       ]
-    }
+    },
+    { path: '/good', component: Good }
   ]
 })
 
